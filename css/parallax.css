@@ -1,0 +1,14 @@
+/*==================    Parallax    ======================*/
+.parallax {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .parallax {
+    background-position: 50% 0 !important;
+    background-size: cover;
+  }
+}
+.parallax1 {
+  background-image: url(../images/page01-stellar01.jpg);
+}
