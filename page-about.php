@@ -114,33 +114,5 @@ get_header(); ?>
 
   </section>  
 
-  <!--========================================================
-                            FOOTER
-  =========================================================-->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="grid_12">
-          <div class="logo">
-            <a href="index.html">
-              <h1 class="logo_icon">vid<span>meo</span></h1>
-              <p>Commercial video production</p>
-            </a>
-          </div> 
-          <div class="privacy-policy">
-            <ul>
-                <li><a class="fa fa-facebook" href="#"></a></li>
-                <li><a class="fa fa-twitter" href="#"></a></li>
-                <li><a class="fa fa-google-plus" href="#"></a></li>
-                <li><a class="fa fa-instagram" href="#"></a></li>
-            </ul>
-            <p><span>vidmeo</span> © <span id="copyright-year"></span> | <a href="index-5.html">Privacy Policy</a></p>
-          </div>
-        </div>
-      </div><!--row-->
-    </div><!--container-->
-  </footer>
-</div>
-
-
+  
 <?php get_footer(); ?>

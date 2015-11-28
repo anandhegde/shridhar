@@ -10,13 +10,19 @@
  */
 
 ?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--<html <?php language_attributes(); ?>>-->
+<html lang="en">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<title><?php  global $title;
+          $title = wp_title("",true);
+          $title = "anand";
+          echo $title;
+        ?>
+</title>
 <?php wp_head(); ?>
 </head>
 
@@ -41,13 +47,19 @@
           <nav class="header-menu">
               <ul class="sf-menu sf-arrows custom">
                 <li>
-                  <a class="active" href="index.php">Home</a>
+                  <a <?php if(is_home()){echo 'class="active"';} ?>href="<?php echo get_home_url();?>">Home</a>
                 </li>
                 <li>
-                  <a href="index-1.html">About</a>
+                  <a <?php if(is_page('about')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/about">About</a>
                 </li>
                 <li>
-                  <a href="index-2.html">portfolio</a>
+                  <a <?php 
+                        if(is_page('portfolio') || is_page('adfilmsnpromos') || is_page('corporatefilms') || is_page('documentaryfilms') || is_page('telefilmsnseries'))
+                        { 
+                          echo 'class="active"';
+                        }?> 
+                      href="<?php echo get_home_url();?>/portfolio">portfolio
+                  </a>
                   <ul>
                     <li><a href="#">Dolore ipsu</a></li>
                       <li>
@@ -62,10 +74,10 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="index-3.html">clients</a>
+                  <a <?php if(is_page('clients')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/clients">clients</a>
                 </li>
                 <li>
-                  <a href="index-4.html">Contacts</a>
+                  <a <?php if(is_page('contact')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/contact">Contacts</a>
                 </li>
               </ul>
             </nav>

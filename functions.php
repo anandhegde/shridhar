@@ -115,13 +115,13 @@ add_action( 'widgets_init', 'crucible_widgets_init' );
  */
 function crucible_scripts() {
 	//wp_enqueue_style( 'crucible-style', get_stylesheet_uri() );
-	if(is_page('about') or is_page('portfolio') or is_page('clients'))
+	if(is_page('about') || is_page('portfolio') || is_page('clients') || is_page('adfilmsnpromos') || is_page('corporatefilms') || is_page('documentaryfilms') || is_page('telefilmsnseries'))
 	{
 		wp_enqueue_style( 'crucible-grid', get_template_directory_uri() . '/css/grid.css' );
 
-		wp_enqueue_style( 'crucible-jquery.fancybox-buttons', get_template_directory_uri() . '/css/jquery.fancybox-buttons.css' );
-
 		wp_enqueue_style( 'crucible-jquery.fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css' );
+
+		wp_enqueue_style( 'crucible-jquery.fancybox-buttons', get_template_directory_uri() . '/css/jquery.fancybox-buttons.css' );
 
 		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css' );
 
@@ -162,6 +162,8 @@ function crucible_scripts() {
 		wp_enqueue_style( 'crucible-jquery.fancybox-buttons', get_template_directory_uri() . '/css/jquery.fancybox-buttons.css' );
 
 		wp_enqueue_style( 'crucible-jquery.fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css' );
+
+		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css' );
 
 		wp_enqueue_script( 'crucible-jquery', get_template_directory_uri() . '/js/jquery.js', array(), '20151115', true );
 
@@ -223,3 +225,42 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load client info 
+*/
+require get_template_directory(). '/inc/clients.php';
+
+/**
+ * Load HomePageImage info
+*/
+require get_template_directory(). '/inc/homePageImage.php';
+
+/**
+ * Load corporate films info
+*/
+require get_template_directory(). '/inc/corporatefilms.php';
+/**
+ * Load ad films info
+*/
+require get_template_directory(). '/inc/adfilms.php';
+/**
+ * Load documentary films info
+*/
+require get_template_directory(). '/inc/documentaryfilms.php';
+/**
+ * Load tele films info
+*/
+require get_template_directory(). '/inc/telefilms.php';
+
+
+ 
+add_action("admin_init", "admin_init");
+function admin_init(){
+    add_meta_box("clientsInfo-meta", "Clients Options", "meta_options_client", "client", "normal", "low");
+    add_meta_box("homePageImageInfo-meta", "Home Page Image Options", "meta_options_homePageImage", "homePageImage", "normal", "low");
+    add_meta_box("corporateFilmsInfo-meta", "Corporate Films Options", "meta_options_corporateFilm", "corporateFilm", "normal", "low");
+    add_meta_box("adFilmsInfo-meta", "Ad Films Options", "meta_options_adFilm", "adFilm", "normal", "low");
+    add_meta_box("documentaryFilmsInfo-meta", "Documentary Films Options", "meta_options_documentaryFilm", "DocumentaryFilm", "normal", "low");
+    add_meta_box("teleFilmsInfo-meta", "Tele Films Options", "meta_options_teleFilm", "telefilm", "normal", "low");
+}

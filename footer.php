@@ -12,16 +12,117 @@
 ?>
 
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'crucible' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'crucible' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'crucible' ), 'crucible', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<!--========================================================
+                              FOOTER
+  =========================================================-->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="grid_12">
+          <div class="logo">
+            <a href="index.php">
+              <h1 class="logo_icon">vid<span>meo</span></h1>
+              <p>Commercial video production</p>
+            </a>
+          </div> 
+          <div class="privacy-policy">
+            <ul>
+                <li><a class="fa fa-facebook" href="#"></a></li>
+                <li><a class="fa fa-twitter" href="#"></a></li>
+                <li><a class="fa fa-google-plus" href="#"></a></li>
+                <li><a class="fa fa-instagram" href="#"></a></li>
+            </ul>
+            <p><span>vidmeo</span> © <span id="copyright-year"></span> | <a href="index-5.html">Privacy Policy</a></p>
+            More <a rel="nofollow" href="http://www.templatemonster.com/category/video-lab-website-templates/" target="_blank">Video Lab Website Templates at TemplateMonster.com</a>
+          </div>
+        </div>
+      </div><!--row-->
+    </div><!--container-->
+  </footer>
 
 <?php wp_footer(); ?>
+<script>
+  $(document).ready(function(){
+    $('body').removeClass();
+  })
+  
+</script>
+<?php 
+  if(is_home())
+  {
+?>
+  <script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }
+    });
+  </script>
+  <!--<![endif]-->
+  <script>
+    $(document).ready(function(){
+      $('.camera_wrap').camera({
+        height: '37.74358974358974%',
+        minHeight: '380',
+        pagination: false,
+        thumbnails: false,
+        time: 7000,
+        navigation: true,
+        playPause: false,
+        loaderOpacity: 0,
+        fx:'simpleFade'
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        helpers : {
+          media : {}
+        }
+      });
+
+    });
+  </script>
+<?php 
+  }
+  else if(is_page('contact'))
+  {
+?>
+   <script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }
+    });
+  </script>
+<?php 
+  }
+  else
+  {
+?>
+  <script>
+    $(document).ready(function () {       
+      if ($('html').hasClass('desktop')) {
+        new WOW().init();
+      }
+    });
+  </script>
+  <!--<![endif]-->
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".fancybox").fancybox({
+        helpers : {
+          media : {}
+        }
+      });
+
+    });
+  </script>
+<?php 
+  }
+?>
+
 
 </body>
 </html>
