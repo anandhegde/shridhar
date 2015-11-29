@@ -19,68 +19,73 @@ get_header(); ?>
     =========================================================-->
 
   <section id="content" class="content">
-
     <div class="camera_block">
       <div class="camera_wrap">
-      <div data-src="images/crucible_logo.gif">
-        <div class="camera_caption fadeIn">
-          <div class="camera_caption_title">
-            <h2>image size is 1950 x 736.Give a proper caption for the image. </h2>
-          </div>
-        </div>
-      </div><!--camera-item-->
-      <div data-src="images/page01-camera02.jpg">
-        <div class="camera_caption fadeIn">
-          <div class="camera_caption_title">
-           <h2>image size is 1950 x 736.Give a proper caption for the image</h2>
-          </div>
-        </div>
-      </div><!--camera-item-->
-      <div data-src="images/page01-camera03.jpg">
-        <div class="camera_caption fadeIn">
-          <div class="camera_caption_title">
-            <h2>image size is 1950 x 736.Give a proper caption for the image</h2>
-          </div>
-        </div>
-      </div><!--camera-item-->
-    </div><!--camera_wrap-->
-  </div><!--camera_block-->
+        <?php 
+            $args=array(
+              'post_type' => 'homePageImage',
+              'meta_key' => 'homePageImage_priority',
+              'posts_per_page' => 150,
+              'orderby' => 'meta_value_num',
+              'order' => 'ASC');
+            $corporatefilm_query = new WP_Query($args);
+            $count_posts = wp_count_posts( 'homepageimage' )->publish;
+            $count = 1;
+            for($i = 0; $i < $count_posts; $i++)
+            {
+              $corporatefilm_query->the_post();
+              //the_post_thumbnail();
+              $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), 'single-post-thumbnail' ); 
+              echo '<div data-src="'.$image[0].'">';
+                echo '<div class="camera_caption fadeIn">';
+                  echo '<div class="camera_caption_title">';
+                   echo '<h2>image size is 1950 x 736.Give a proper caption for the image</h2>';
+                  echo '</div>';
+                echo '</div>';
+              echo '</div><!--camera-item-->';
+            }
+          ?>
+      </div><!--camera_wrap-->
+    </div><!--camera_block-->
 
-
-  <div class="container">
-    <div class="video-content">
-    <h3>Our Latest Works</h3>
+   <div class="container">
+    <hr/>
+    <div class="video-content folio-video-content">
+    <h3>Our Works</h3>
       <div class="row">
-        <div class="grid_4 wow fadeInLeft">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="" alt="1 img for corporate film 370 x 166 & youtube link"><img class="cursor" src="images/video-hover.png" alt=""></a>
+        <div class="grid_6">
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page01-01.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
           <h4>Corporate Films & Presentations</h4>
           <h5></h5>
-          <p class="text-justify">CRUCIBLE offers turnkey audio visual services accommodating all facets of video production in corporate applications. CRUCIBLE produces video presentations that will illustrate your ideas to clients. We will work with you,side-by-side, ensuring you with finished video presentation that will meet your satisfaction. Crucible giving a robust brand to take shape, creating a unique corporate identity.</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="text-align:center"><a class="main-btn" href="index-2.html#footer">read more</a></p>
+          <p>CRUCIBLE offers turnkey audio visual services accommodating all facets of video production in corporate applications. CRUCIBLE produces video presentations that will illustrate your ideas to clients. We will work with you, side-by-side, ensuring you with finished video presentation that will meet your satisfaction. Crucible giving a robust brand to take shape, creating a unique corporate identity.</p>
+          <a class="main-btn" href="<?php  echo get_home_url();?>/corporatefilms"><span>read more</span></a>
         </div>
-        <div class="grid_4 wow fadeInUp">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="" alt="1 img for documentary film 370 x 166 & youtube link"><img class="cursor" src="images/video-hover.png" alt=""></a>
-          <h4>Documentary Films</h4>
+        <div class="grid_6">
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page01-02.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <h4>Ad Films & Promo's</h4>
+          <h4 style="visibility:hidden">Ad Films</h4>
           <h5></h5>
-          <p class="text-justify">Crucible’s dedicated team will take care of all aspects of documentary production. We have the equipment and expertise to undertake productions from scripting to final mix. To our credit,we have produced a number of documentaryfilms on Life causing diseases (AIDS,Cancer,TB,etc.),Public awareness programs, Biography of literature personalities,Western Ghats of India, and Endangered tribal communities of south India. </p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
-        </div>
-        <div class="grid_4 wow fadeInRight">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="" alt="1 img for tele film 370 x 166 & youtube link"><img class="cursor" src="images/video-hover.png" alt=""></a>
-          <h4>Tele Films & Promo's</h4>
-          <h5></h5>
-          <p class="text-justify">Crucible has produced its own Television series Tele films and live shows for Doordarshan regional and also National theonly terrestrial channel of India. In addition tothis we have contributed to the production orpost-production of literally thousands of programs for other producers, primarily fortelevision. </p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="visibility:hidden">to make read more align with other read more</p>
-          <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
+          <p>CRUCIBLE caters to your marketing needs creating Ads that your targetaudience can't miss. With a full range of integratedAdvertising services, we research on target audience.From development of concept to storyboarding,visualizing, media planning, outdoor and indoorshooting and post production CRUCIBLE provides consistent, measurable results </p>
+          <a class="main-btn" href="<?php  echo get_home_url();?>/adfilmsnpromos"><span>read more</span></a>
         </div>
       </div><!--row-->
+      <div class="row">
+        <div class="grid_6">
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page03-02.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <h4>Documentary Films</h4>
+          <h5></h5>
+          <p>Crucible’s dedicated team will take care of all aspects of documentary production. We have the equipment and expertise to undertake productions from scripting to final mix. To our credit,we have produced a number of documentaryfilms on Life causing diseases(AIDS,Cancer,TB,etc.),Public awareness programs, Biography of literature personalities,Western Ghats of India, and Endangered tribal communities of south India. </p>
+          <a class="main-btn" href="<?php  echo get_home_url();?>/documentaryfilms"><span>read more</span></a>
+        </div>
+        <div class="grid_6">
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page03-03.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <h4>Tele Films & Series</h4>
+          <h5></h5>
+          <p>Crucible has produced its own Television series Tele films and live shows for Doordarshan regional and also National theonly terrestrial channel of India. In addition tothis we have contributed to the production orpost-production of literally thousands of programs for other producers, primarily fortelevision. </p>
+          <p style="visibility:hidden">dummy paragraph</p>
+          <a class="main-btn" href="<?php  echo get_home_url();?>/telefilmsnseries"><span>read more</span></a>
+        </div>
+      </div>
     </div><!--latest-works-->
   </div><!--container-->
 
