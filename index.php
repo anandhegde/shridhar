@@ -54,14 +54,14 @@ get_header(); ?>
     <h3>Our Works</h3>
       <div class="row">
         <div class="grid_6">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page01-01.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="<?php bloginfo('template_url')?>/images/page01-01.jpg" alt="Video"><img class="cursor" src="<?php bloginfo('template_url')?>/images/video-hover.png" alt=""></a>
           <h4>Corporate Films & Presentations</h4>
           <h5></h5>
           <p>CRUCIBLE offers turnkey audio visual services accommodating all facets of video production in corporate applications. CRUCIBLE produces video presentations that will illustrate your ideas to clients. We will work with you, side-by-side, ensuring you with finished video presentation that will meet your satisfaction. Crucible giving a robust brand to take shape, creating a unique corporate identity.</p>
           <a class="main-btn" href="<?php  echo get_home_url();?>/corporatefilms"><span>read more</span></a>
         </div>
         <div class="grid_6">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page01-02.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="<?php bloginfo('template_url')?>/images/page01-01.jpg" alt="Video"><img class="cursor" src="<?php bloginfo('template_url')?>/images/video-hover.png" alt=""></a>
           <h4>Ad Films & Promo's</h4>
           <h4 style="visibility:hidden">Ad Films</h4>
           <h5></h5>
@@ -71,14 +71,14 @@ get_header(); ?>
       </div><!--row-->
       <div class="row">
         <div class="grid_6">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page03-02.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="<?php bloginfo('template_url')?>/images/page01-01.jpg" alt="Video"><img class="cursor" src="<?php bloginfo('template_url')?>/images/video-hover.png" alt=""></a>
           <h4>Documentary Films</h4>
           <h5></h5>
           <p>Crucible’s dedicated team will take care of all aspects of documentary production. We have the equipment and expertise to undertake productions from scripting to final mix. To our credit,we have produced a number of documentaryfilms on Life causing diseases(AIDS,Cancer,TB,etc.),Public awareness programs, Biography of literature personalities,Western Ghats of India, and Endangered tribal communities of south India. </p>
           <a class="main-btn" href="<?php  echo get_home_url();?>/documentaryfilms"><span>read more</span></a>
         </div>
         <div class="grid_6">
-          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="images/page03-03.jpg" alt="Video"><img class="cursor" src="images/video-hover.png" alt=""></a>
+          <a class="fancybox fancybox.video" href="player.vimeo.com/video/37582125?wmode=transparent"><img class="video-bg" src="<?php bloginfo('template_url')?>/images/page01-01.jpg" alt="Video"><img class="cursor" src="<?php bloginfo('template_url')?>/images/video-hover.png" alt=""></a>
           <h4>Tele Films & Series</h4>
           <h5></h5>
           <p>Crucible has produced its own Television series Tele films and live shows for Doordarshan regional and also National theonly terrestrial channel of India. In addition tothis we have contributed to the production orpost-production of literally thousands of programs for other producers, primarily fortelevision. </p>
