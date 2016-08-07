@@ -3,17 +3,18 @@ function include(url){
   return false ;
 }
 
+var site_url = "/wp-content/themes/shridhar/";
 /* cookie.JS
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.cookie.js');
+include(site_url+'js/jquery.cookie.js');
 
 
 /* DEVICE.JS*/
-include('/wpcrucible/wp-content/themes/crucible/js/device.min.js');
+include(site_url+'js/device.min.js');
 
 /* Stick up menu
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/tmstickup.js');
+include(site_url+'js/tmstickup.js');
 $(window).load(function() { 
   if ($('html').hasClass('desktop')) {
       $('#stuck_container').TMStickUp({
@@ -26,26 +27,26 @@ $(window).load(function() {
 (function ($) {
 var o = $('.parallax');
 if (o.length > 0 && $('html').hasClass('desktop')) {
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.rd-parallax.js');
+include(site_url+'js/jquery.rd-parallax.js');
 }
 })(jQuery);
 
 /* Easing library
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.easing.1.3.js');
+include(site_url+'js/jquery.easing.1.3.js');
 
 
 /* ToTop
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.ui.totop.js');
+include(site_url+'js/jquery.ui.totop.js');
 $(function () {   
   $().UItoTop({ easingType: 'easeOutQuart' });
 });
 
 /* DEVICE.JS AND SMOOTH SCROLLIG
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.mousewheel.min.js');
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.simplr.smoothscroll.min.js');
+include(site_url+'js/jquery.mousewheel.min.js');
+include(site_url+'js/jquery.simplr.smoothscroll.min.js');
 
 $(function () { 
   if ($('html').hasClass('desktop')) {
@@ -62,7 +63,7 @@ $(function () {
     var o = document.getElementById("google-map");
     if (o) {
         include('http://maps.google.com/maps/api/js?sensor=false');
-        include('/wpcrucible/wp-content/themes/crucible/js/jquery.rd-google-map.js');
+        include(site_url+'js/jquery.rd-google-map.js');
 
         $(document).ready(function () {
             var o = $('#google-map');
@@ -80,7 +81,7 @@ $(function () {
 (function ($) {
     var o = $('#demoTab');
     if (o.length > 0) {
-        include('/wpcrucible/wp-content/themes/crucible/js/jquery.responsive.tabs.js');
+        include(site_url+'js/jquery.responsive.tabs.js');
         $("#demoTab").easyResponsiveTabs();
     }
 })(jQuery);
@@ -97,8 +98,8 @@ $(document).ready(function() {
 
 /* Superfish menu
 ========================================================*/
-include('/wpcrucible/wp-content/themes/crucible/js/superfish.js');
-include('/wpcrucible/wp-content/themes/crucible/js/jquery.mobilemenu.js');
+include(site_url+'js/superfish.js');
+include(site_url+'js/jquery.mobilemenu.js');
 
 
 /*Subscribe Form
@@ -106,7 +107,7 @@ include('/wpcrucible/wp-content/themes/crucible/js/jquery.mobilemenu.js');
 (function ($) {
     var o = $('#subscribe-form');
     if (o.length > 0) {
-        include('/wpcrucible/wp-content/themes/crucible/js/sform.js');
+        include(site_url+'js/sform.js');
     }
 })(jQuery);
 
@@ -116,8 +117,8 @@ include('/wpcrucible/wp-content/themes/crucible/js/jquery.mobilemenu.js');
 (function ($) {
     var o = $('#contact-form');
     if (o.length > 0) {
-        include('/wpcrucible/wp-content/themes/crucible/js/modal.js');
-        include('/wpcrucible/wp-content/themes/crucible/js/tmform.js');
+        include(site_url+'js/modal.js');
+        include(site_url+'js/tmform.js');
     }
 })(jQuery);
 

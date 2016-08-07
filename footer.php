@@ -22,7 +22,7 @@
           <div class="logo">
             <a href="index.php">
               <h1 class="logo_icon">vid<span>meo</span></h1>
-              <p>Commercial video production</p>
+              <p>Professional video production</p>
             </a>
           </div> 
           <div class="privacy-policy">
@@ -32,8 +32,7 @@
                 <li><a class="fa fa-google-plus" href="#"></a></li>
                 <li><a class="fa fa-instagram" href="#"></a></li>
             </ul>
-            <p><span>vidmeo</span> © <span id="copyright-year"></span> | <a href="index-5.html">Privacy Policy</a></p>
-            More <a rel="nofollow" href="http://www.templatemonster.com/category/video-lab-website-templates/" target="_blank">Video Lab Website Templates at TemplateMonster.com</a>
+            <p><span>crucible</span> © <span id="copyright-year"></span> | <!-- <a href="index-5.html">Privacy Policy</a> --></p>
           </div>
         </div>
       </div><!--row-->

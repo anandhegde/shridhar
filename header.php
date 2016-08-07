@@ -40,8 +40,9 @@
         <div class="grid_12">
           <div class="logo">
             <a href="index.php">
-              <h1 class="logo_icon"><span>vid</span>meo</h1>
-              <p>Commercial video production</p>
+              <!-- <h1 class="logo_icon"><span>vid</span>meo</h1> -->
+              <img class="logo_icon" src="http://local.cruciblestudio.com/wp-content/uploads/2016/08/cru.png" style="width:39%">
+              <p>Professional video production</p>
             </a>
           </div>
           <nav class="header-menu">
