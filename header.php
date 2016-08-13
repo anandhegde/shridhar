@@ -41,44 +41,39 @@
           <div class="logo">
             <a href="index.php">
               <!-- <h1 class="logo_icon"><span>vid</span>meo</h1> -->
-              <img class="logo_icon" src="http://local.cruciblestudio.com/wp-content/uploads/2016/08/cru.png" style="width:39%">
-              <p>Professional video production</p>
+              <img src="/wp-content/themes/shridhar/images/crucible.png">
+              <!-- <p style="width:inherit">Professional video production</p> -->
             </a>
           </div>
           <nav class="header-menu">
               <ul class="sf-menu sf-arrows custom">
                 <li>
-                  <a <?php if(is_home()){echo 'class="active"';} ?>href="<?php echo get_home_url();?>">Home</a>
+                  <a class="active" href="#">Home</a>
                 </li>
                 <li>
-                  <a <?php if(is_page('about')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/about">About</a>
+                  <a <?php if(is_page('about')){ echo 'class="active"';}?> href="#about">About</a>
                 </li>
                 <li>
-                  <a <?php 
-                        if(is_page('portfolio') || is_page('adfilmsnpromos') || is_page('corporatefilms') || is_page('documentaryfilms') || is_page('telefilmsnseries'))
-                        { 
-                          echo 'class="active"';
-                        }?> 
-                      href="<?php echo get_home_url();?>/portfolio">portfolio
+                  <a href="#portfolio">portfolio
                   </a>
-                  <ul>
-                    <li><a href="#">Dolore ipsu</a></li>
-                      <li>
-                      <a href="#">Consecte</a>
+                  <!-- <ul>
+                    <li><a href="#">Corporate Films & Presentations</a></li>
+                    <li>
+                      <a href="#">Ad Films & Promo's</a>
                         <ul>
                           <li><a href="#">Dolore ipsu</a></li>
                           <li><a href="#">Consecte</a></li>
                           <li><a href="#">Elit Conseq</a></li>
                         </ul>
-                      </li>
-                    <li><a href="#">Elit Conseq</a></li>
-                  </ul>
+                    </li>
+                    <li><a href="#"></a></li>
+                  </ul> -->
                 </li>
                 <li>
-                  <a <?php if(is_page('clients')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/clients">clients</a>
+                  <a href="#clients">clients</a>
                 </li>
                 <li>
-                  <a <?php if(is_page('contact')){ echo 'class="active"';}?> href="<?php echo get_home_url();?>/contact">Contacts</a>
+                  <a href="#contact">Contacts</a>
                 </li>
               </ul>
             </nav>

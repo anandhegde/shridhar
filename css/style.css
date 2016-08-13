@@ -1048,8 +1048,8 @@ hr {
                     HEADER styles
 =========================================================*/
 .header {
-  margin-top: 98px;
-  margin-bottom: 110px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 .header nav {
   display: inline-block;
@@ -1060,8 +1060,8 @@ hr {
 .logo {
   display: block;
   position: relative;
-  margin-left: 125px;
-  margin-top: 1px;
+  margin-left: 0px;
+  margin-top: 10px;
   float: left;
 }
 .logo_icon {
@@ -1103,7 +1103,7 @@ hr {
   position: relative;
   display: block;
   float: right;
-  margin-top: 16px;
+  margin-top: 0px;
 }
 .header-menu .select-menu {
   outline: none;

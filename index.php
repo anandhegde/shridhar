@@ -48,7 +48,7 @@ get_header(); ?>
       </div><!--camera_wrap-->
     </div><!--camera_block-->
 
- <div class="container">
+ <div id="about" class="container">
     <hr class="main-hr">
     <div class="row">
       <div class="grid_8 wow fadeInLeft">
@@ -130,7 +130,7 @@ Our passion for creative conceptualization and meticulous planning that have bee
   
 
 
-   <div class="container">
+   <div id="portfolio" class="container">
     <hr/>
     <div class="video-content folio-video-content">
     <h3>Our Works</h3>
@@ -218,7 +218,7 @@ Our passion for creative conceptualization and meticulous planning that have bee
     </div><!--services-->
   </div><!--container-->
 
- <div class="container">
+ <div id="clients" class="container">
     <div class="clients">
     <hr>
     <h3>Our Clients</h3>
@@ -259,7 +259,7 @@ Our passion for creative conceptualization and meticulous planning that have bee
     </div>
   </div>
  
-<div class="container">
+<div id="contact" class="container">
     <hr/>
     <div class="row">
       <div class="grid_12">
