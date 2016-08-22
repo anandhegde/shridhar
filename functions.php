@@ -191,6 +191,8 @@ function crucible_scripts() {
 	wp_enqueue_script( 'crucible-script', get_template_directory_uri() . '/js/script.js', array(), '20151115', true );
 
 	wp_enqueue_script( 'crucible-device', get_template_directory_uri() . '/js/device.min.js', array(), '20151115', true );
+	wp_enqueue_script( 'crucible-custom', get_template_directory_uri() . '/js/custom.js', array(), '20160822', true );
+	wp_enqueue_script( 'crucible-smooth-scroll', get_template_directory_uri() . '/js/jquery.simplr.smoothscroll.min.js', array(), '20160822', true );
 	//wp_enqueue_script( 'crucible-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	//wp_enqueue_script( 'crucible-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );

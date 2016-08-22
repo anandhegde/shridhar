@@ -46,15 +46,15 @@
             </a>
           </div>
           <nav class="header-menu">
-              <ul class="sf-menu sf-arrows custom">
+              <ul id="navigation_ul" class="sf-menu sf-arrows custom">
                 <li>
-                  <a class="active" href="#">Home</a>
+                  <a id="home_href" href="#">Home</a>
                 </li>
                 <li>
-                  <a <?php if(is_page('about')){ echo 'class="active"';}?> href="#about">About</a>
+                  <a id="about_href" href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#portfolio">portfolio
+                  <a id="portfolio_href" href="#portfolio">portfolio
                   </a>
                   <!-- <ul>
                     <li><a href="#">Corporate Films & Presentations</a></li>
@@ -70,10 +70,10 @@
                   </ul> -->
                 </li>
                 <li>
-                  <a href="#clients">clients</a>
+                  <a id="clients_href" href="#clients">clients</a>
                 </li>
                 <li>
-                  <a href="#contact">Contacts</a>
+                  <a id="contact_href" href="#contact">Contacts</a>
                 </li>
               </ul>
             </nav>

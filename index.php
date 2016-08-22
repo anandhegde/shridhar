@@ -19,7 +19,7 @@ get_header(); ?>
     =========================================================-->
 
   <section id="content" class="content">
-    <div class="camera_block">
+    <div id="home" class="camera_block">
       <div class="camera_wrap">
         <?php 
             $args=array(

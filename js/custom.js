@@ -45,19 +45,100 @@ $(document).ready(function(){
 	    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
 	};
 	 
-	if( $('#about').length > 0 ) { // if target element exists in DOM
-		if( $('#about').is_on_screen() ) { // if target element is visible on screen after DOM loaded
-	        console.log("about visible")
-		} else {
-	        console.log("about not visible")
-		}
-	}
 	$(window).scroll(function(){ // bind window scroll event
+		if( $('#home').length > 0 ) { // if target element exists in DOM
+			if( $('#home').is_on_screen() ) { // if target element is visible on screen after DOM loaded
+				id = $("#navigation_ul .active").attr("id");
+				if( id != undefined)
+				{	
+					$("#stuck_container #"+id).each(function(){
+						$(this).removeClass("active")
+					})
+				}
+				$("#stuck_container #home_href").each(function(){
+					$(this).addClass("active")
+				})
+				//$("#home_href").removeClass("active")
+			} else {
+				$("#stuck_container #home_href").each(function(){
+					$(this).removeClass("active")
+				})
+			}
+		}
 		if( $('#about').length > 0 ) { // if target element exists in DOM
 			if( $('#about').is_on_screen() ) { // if target element is visible on screen after DOM loaded
-				console.log("about visible")
+				id = $("#navigation_ul .active").attr("id");
+				if( id != undefined)
+				{	
+					$("#stuck_container #"+id).each(function(){
+						$(this).removeClass("active")
+					})
+				}
+				$("#stuck_container #about_href").each(function(){
+					$(this).addClass("active")
+				})
+				//$("#home_href").removeClass("active")
 			} else {
-				console.log("about not visible")
+				$("#stuck_container #about_href").each(function(){
+					$(this).removeClass("active")
+				})
+			}
+		}
+		if( $('#portfolio').length > 0 ) { // if target element exists in DOM
+			if( $('#portfolio').is_on_screen() ) { // if target element is visible on screen after DOM loaded
+				id = $("#navigation_ul .active").attr("id");
+				if( id != undefined)
+				{	
+					$("#stuck_container #"+id).each(function(){
+						$(this).removeClass("active")
+					})
+				}
+				$("#stuck_container #portfolio_href").each(function(){
+					$(this).addClass("active")
+				})
+				//$("#home_href").removeClass("active")
+			} else {
+				$("#stuck_container #portfolio_href").each(function(){
+					$(this).removeClass("active")
+				})
+			}
+		}
+		if( $('#clients').length > 0 ) { // if target element exists in DOM
+			if( $('#clients').is_on_screen() ) { // if target element is visible on screen after DOM loaded
+				id = $("#navigation_ul .active").attr("id");
+				if( id != undefined)
+				{	
+					$("#stuck_container #"+id).each(function(){
+						$(this).removeClass("active")
+					})
+				}
+				$("#stuck_container #clients_href").each(function(){
+					$(this).addClass("active")
+				})
+				//$("#home_href").removeClass("active")
+			} else {
+				$("#stuck_container #clients_href").each(function(){
+					$(this).removeClass("active")
+				})
+			}
+		}
+		if( $('#contact').length > 0 ) { // if target element exists in DOM
+			if( $('#contact').is_on_screen() ) { // if target element is visible on screen after DOM loaded
+				id = $("#navigation_ul .active").attr("id");
+				if( id != undefined)
+				{	
+					$("#stuck_container #"+id).each(function(){
+						$(this).removeClass("active")
+					})
+				}
+				$("#stuck_container #contact_href").each(function(){
+					$(this).addClass("active")
+				})
+				//$("#home_href").removeClass("active")
+			} else {
+				$("#stuck_container #contact_href").each(function(){
+					$(this).removeClass("active")
+				})
 			}
 		}
 	});
