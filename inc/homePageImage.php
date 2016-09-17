@@ -25,8 +25,12 @@ function homePageImage_register() {
         $custom = get_post_custom($post->ID);
         $homePageImage_url =  $custom["homePageImage_url"][0];
         $homePageImage_priority = $custom["homePageImage_priority"][0];
+        $homePageImage_caption = $custom["homePageImage_caption"][0];
 ?>
         <label> HomePageImage Url</label><input style="width:100%" placeholder="youtube link" name="homePageImage_url" value="<?php echo $homePageImage_url; ?>" />
+        <br/>
+        <br/>
+        <label>HomePageImage Caption</label><br/><input style="width:100%" name="homePageImage_caption" value="<?php echo $homePageImage_caption; ?>" />
         <br/>
         <br/>
         <label>HomePageImage Priority</label><br/><input style="width:100%" name="homePageImage_priority" value="<?php echo $homePageImage_priority; ?>" />
@@ -39,4 +43,5 @@ function save_homePageImage_info(){
     global $post;
     update_post_meta($post->ID, "homePageImage_url", $_POST["homePageImage_url"]);
     update_post_meta($post->ID, "homePageImage_priority", $_POST["homePageImage_priority"]);
+    update_post_meta($post->ID, "homePageImage_caption", $_POST["homePageImage_caption"]);
 }

@@ -3088,3 +3088,10 @@ p
   text-align: justify;
 }
 .about p  { margin-bottom: 0px }
+
+.history td, th {
+    border: collapse;
+    text-align: justify;
+    padding: 15px;
+    vertical-align: middle !important;
+}
