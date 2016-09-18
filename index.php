@@ -106,31 +106,32 @@ get_header(); ?>
                         1995
                       </td>
                       <td>
-                        We believe in listen more & speak less. We only speak with our job. We create friendly environment in between our Talent Pool and Clientele so that both may complement each other. Our clients see us as valuable advisors and their brand promoters. 
+                        Crucible Studio came in to existence in Bangalore(India) with the talents from industry who decided to pool in to create their own space.It was the time when the Film and Tv industry was facing transition from analouge to digital.The young technicians with same line of thought started thinking the same and a team of youngs began. 
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        1995
+                        1998
                       </td>
                       <td>
-                        We believe in listen more & speak less. We only speak with our job. We create friendly environment in between our Talent Pool and Clientele so that both may complement each other. Our clients see us as valuable advisors and their brand promoters. 
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        1995
-                      </td>
-                      <td>
-                        We believe in listen more & speak less. We only speak with our job. We create friendly environment in between our Talent Pool and Clientele so that both may complement each other. Our clients see us as valuable advisors and their brand promoters. 
+                        This is the year when the young team got an independent Government documentary which was a challenge to complete the project within the limited time frame and budjet.The documentary was well apriciated by the department at that time.
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        1995
+                        2000
                       </td>
                       <td>
-                        We believe in listen more & speak less. We only speak with our job. We create friendly environment in between our Talent Pool and Clientele so that both may complement each other. Our clients see us as valuable advisors and their brand promoters. 
+                        CRUCIBLE Studio team proved its ability with every client.A enhanced studio fecility was set up to fulfil the client's demands.Constant innovation and upgradation is keeping pace and place in the competative market. 
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        2012
+                      </td>
+                      <td>
+                        As each year passed, CRUCIBLE Studio kept sharpening its edge and today we proudly introduce ourselves as one of the well known name in the field of film and Tv Production.
+                        Our passion for creative conceptualization and meticulous planning that have been the pillars of our success and continuous growth. We believe in constant innovation and up-gradation and thus are able to keep pace with the fast moving competitive world. 
                       </td>
                     </tr>
                   </table>
