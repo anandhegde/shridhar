@@ -255,6 +255,8 @@ require get_template_directory(). '/inc/documentaryfilms.php';
 */
 require get_template_directory(). '/inc/telefilms.php';
 
+require get_template_directory(). '/inc/recentworks.php';
+
 
  
 add_action("admin_init", "admin_init");
@@ -265,4 +267,5 @@ function admin_init(){
     add_meta_box("adFilmsInfo-meta", "Ad Films Options", "meta_options_adFilm", "adFilm", "normal", "low");
     add_meta_box("documentaryFilmsInfo-meta", "Documentary Films Options", "meta_options_documentaryFilm", "DocumentaryFilm", "normal", "low");
     add_meta_box("teleFilmsInfo-meta", "Tele Films Options", "meta_options_teleFilm", "telefilm", "normal", "low");
+    add_meta_box("recentworks-meta", "Recent Works", "meta_options_RecentWorks", "recentworks", "normal", "low");
 }
