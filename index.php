@@ -48,7 +48,7 @@ get_header(); ?>
       </div><!--camera_wrap-->
     </div><!--camera_block-->
 
- <div id="about" class="container">
+<div id="about" class="container">
     <hr class="main-hr">
     <div class="row">
       <div class="grid_8 wow fadeInLeft">
@@ -177,11 +177,11 @@ get_header(); ?>
         </div><!--news--> 
       </div>
     </div><!--row-->
-  </div><!--container-->
+</div><!--container-->
   
 
 
-   <div id="portfolio" class="container">
+<div id="portfolio" class="container">
     <hr/>
     <div class="video-content folio-video-content">
     <h3>Our Works</h3>
@@ -220,7 +220,7 @@ get_header(); ?>
         </div>
       </div>
     </div><!--latest-works-->
-  </div><!--container-->
+</div><!--container-->
 
 
   <div class="container">
@@ -310,7 +310,7 @@ get_header(); ?>
     </div>
   </div>
  
-<div id="contact" class="container">
+  <div id="contact" class="container">
     <hr/>
     <div class="row">
       <div class="grid_12">
@@ -320,8 +320,8 @@ get_header(); ?>
           <div id="google-map" class="map_model">
           </div>
           <ul class="map_locations">
-            <li data-x="-73.9874068" data-y="40.643180" >
-              <p> 9863 - 9867 Mill Road, Cambridge, MG09 99HT.<br><span>+1 800 559 6580</span><br><span>+1 800 603 6035</span></p>
+            <li data-x="77.567929" data-y="12.958816" >
+              <p> 208/02 3rd main Road, Chamarajpet<br>Bangalore (Karnataka)<br>India-560 018</p>
             </li>
           </ul>
         </div><!--map-->

@@ -62,7 +62,7 @@ $(function () {
 (function ($) {
     var o = document.getElementById("google-map");
     if (o) {
-        include('http://maps.google.com/maps/api/js?sensor=false');
+        include('http://maps.google.com/maps/api/js?key=AIzaSyC24rJ6vA6feotir2gXfhAWiFxVmpykcl4&sensor=false');
         include(site_url+'js/jquery.rd-google-map.js');
 
         $(document).ready(function () {
