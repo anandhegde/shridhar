@@ -1623,6 +1623,7 @@ hr {
 }
 .news_item {
   margin-bottom: 28px;
+  display:table-row;
 }
 .news_date {
   display: block;
@@ -1630,6 +1631,8 @@ hr {
   float: left;
   margin-right: 29px;
   margin-top: 3px;
+  margin-bottom: 10px;
+  display:table-cell;
 }
 .news_date_top-block {
   display: block;
@@ -1671,6 +1674,7 @@ hr {
 }
 .news_info {
   display: block;
+  display:table-cell;
 }
 .news_info h5 {
   margin-top: -2px;

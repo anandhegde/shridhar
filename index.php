@@ -145,23 +145,22 @@ get_header(); ?>
         <h3>Recent Works</h3>
             <?php
 
-            $args=array(
-              'post_type' => 'recentworks',
-              'posts_per_page' => 150
-            );
-            $corporatefilm_query = new WP_Query($args);
-            $count_posts = wp_count_posts( 'recentworks')->publish;
-            $count = 1;
-            for($i = 0; $i < $count_posts; $i++)
-            {
-              $corporatefilm_query->the_post();
+              $args=array(
+                'post_type' => 'recentworks',
+                'posts_per_page' => 150
+              );
+              $corporatefilm_query = new WP_Query($args);
+              $count_posts = wp_count_posts( 'recentworks')->publish;
+              $count = 1;
+              for($i = 0; $i < $count_posts; $i++)
+              {
+                $corporatefilm_query->the_post();
 
-              $date = get_post_custom_values('date', get_the_ID())[0];
-              $year = explode("-", $date)[0];
-              $month = explode("-", $date)[1];
-              $day = explode("-", $date)[2];
-              //the_post_thumbnail();
-              ?>
+                $date = get_post_custom_values('date', get_the_ID())[0];
+                $year = explode("-", $date)[0];
+                $month = explode("-", $date)[1];
+                $day = explode("-", $date)[2];
+            ?>
             <div class="news_item">
             <time class="news_date" datetime="2014-12-03">
               <span class="news_date_top-block"><?php echo "$day";?></span>
@@ -173,18 +172,8 @@ get_header(); ?>
             </div>
             </div>
             <?php
-            }
+              }
             ?>
-          <div class="news_item">
-            <time class="news_date" datetime="2014-12-03">
-              <span class="news_date_top-block">06</span>
-              <span class="news_date_bot-block"><span>dec</span><br>2014</span>
-            </time>
-            <div class="news_info">
-              <h5><a href="#">Donec facilisi ule<br><span>Mes cuml dia sed</span></a></h5>
-              <p>Morbi tempor quam mas sadipu iscing ut cucongue pentesqu nisel elit comte modo velultrices vel conseq.</p>
-            </div>
-          </div><!--news_item--> 
         </div><!--news--> 
       </div>
     </div><!--row-->
