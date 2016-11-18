@@ -21,16 +21,15 @@
         <div class="grid_12">
           <div class="logo">
             <a href="index.php">
-              <h1 class="logo_icon">vid<span>meo</span></h1>
-              <p>Professional video production</p>
+              <img src="/wp-content/themes/shridhar/images/crucible.png">
             </a>
           </div> 
           <div class="privacy-policy">
             <ul>
-                <li><a class="fa fa-facebook" href="#"></a></li>
-                <li><a class="fa fa-twitter" href="#"></a></li>
-                <li><a class="fa fa-google-plus" href="#"></a></li>
-                <li><a class="fa fa-instagram" href="#"></a></li>
+                <li><a target="_blank" class="fa fa-facebook" href="#"></a></li>
+                <!-- <li><a target="_blank" class="fa fa-twitter" href="#"></a></li> -->
+                <li><a target="_blank"class="fa fa-google-plus" href="https://plus.google.com/117432610649138733299"></a></li>
+                <li><a target="_blank" class="fa fa-instagram" href="#"></a></li>
             </ul>
             <p><span>crucible</span> © <span id="copyright-year"></span> | <!-- <a href="index-5.html">Privacy Policy</a> --></p>
           </div>
