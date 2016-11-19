@@ -257,7 +257,13 @@ require get_template_directory(). '/inc/telefilms.php';
 
 require get_template_directory(). '/inc/recentworks.php';
 
+require get_template_directory(). '/inc/camera-production.php';
 
+require get_template_directory(). '/inc/post-production.php';
+
+require get_template_directory(). '/inc/motion-graphic-vfx.php';
+
+require get_template_directory(). '/inc/profesional-audio-video.php';
  
 add_action("admin_init", "admin_init");
 function admin_init(){
@@ -268,4 +274,8 @@ function admin_init(){
     add_meta_box("documentaryFilmsInfo-meta", "Documentary Films Options", "meta_options_documentaryFilm", "DocumentaryFilm", "normal", "low");
     add_meta_box("teleFilmsInfo-meta", "Tele Films Options", "meta_options_teleFilm", "telefilm", "normal", "low");
     add_meta_box("recentworks-meta", "Recent Works", "meta_options_RecentWorks", "recentworks", "normal", "low");
+    add_meta_box("camera-production-meta", "Camera and Produciton", "meta_options_cameraProduction", "cameraproduction", "normal", "low");
+    add_meta_box("post-production-meta", "Post Produciton", "meta_options_postProduction", "postProduction", "normal", "low");
+    add_meta_box("motion-graphic-vfx-meta", "Motion Graphic Vfx", "meta_options_motionGraphicVfx", "motiongraphic", "normal", "low");
+    add_meta_box("profesional-audio-video-meta", "Profesional Audio Video", "meta_options_profesionalAudioVideo", "profesionalAudioVdio", "normal", "low");
 }
