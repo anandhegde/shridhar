@@ -48,13 +48,13 @@
           <nav class="header-menu">
               <ul id="navigation_ul" class="sf-menu sf-arrows custom">
                 <li>
-                  <a id="home_href" href="#">Home</a>
+                  <a id="home_href" href="<?php echo get_home_url();?>">Home</a>
                 </li>
                 <li>
-                  <a id="about_href" href="#about">About</a>
+                  <a id="about_href" href="<?php echo get_home_url();?>#about">About</a>
                 </li>
                 <li>
-                  <a id="portfolio_href" href="#portfolio">portfolio
+                  <a id="portfolio_href" href="<?php echo get_home_url();?>#portfolio">portfolio
                   </a>
                   <!-- <ul>
                     <li><a href="#">Corporate Films & Presentations</a></li>
@@ -70,10 +70,10 @@
                   </ul> -->
                 </li>
                 <li>
-                  <a id="clients_href" href="#clients">clients</a>
+                  <a id="clients_href" href="<?php echo get_home_url();?>#clients">clients</a>
                 </li>
                 <li>
-                  <a id="contact_href" href="#contact">Contacts</a>
+                  <a id="contact_href" href="<?php echo get_home_url();?>#contact">Contacts</a>
                 </li>
               </ul>
             </nav>
