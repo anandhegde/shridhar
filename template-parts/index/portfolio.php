@@ -49,7 +49,7 @@
         <p class="text-justify">Crucible production arm provides complete line production, coordination and management facilities to film crews across India. To film in an unknown environment is always stressful but our pre production planning ensures that there are no hassles on the shoot. This increases the productivity and lowers the cost as well. Our coordinators have experience in making a rapport with the subjects, pinning down a location with proper releases and conduct research to dig out interesting facets adding value to the film.</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
-        <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
+        <p style="text-align:center"><a class="main-btn" href="<?php  echo get_home_url();?>/camera-production">read more</a></p>
       </div>
       <div class="grid_6 wow fadeInUp">
         <div class="services_icon"><i class="fa fa-group"></i></div>
@@ -57,7 +57,7 @@
         <p class="text-justify">As a multi-genre post-production house we offer our clients a creative staff with a versatile background in dramas, commercials, TV specials, documentaries and AV promos. Our depth of experience is critical when it comes to making your project stand out above the rest. Our editors can accompany your project from the initial idea through production, editing and follow-up, providing you with the continuity you need to get the best possible results.</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
-        <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
+        <p style="text-align:center"><a class="main-btn" href="<?php  echo get_home_url();?>/post-production">read more</a></p>
       </div> 
     </div><!-- row ends here-->
     <br><br><br><br>
@@ -68,7 +68,7 @@
         <p class="text-justify">We have our creative graphic team to provide you with any engaging graphics and story-board, be it for incorporating into video or for print applications. The team has productively worked on Film publicity material ranging from Credit Roll, Posters, fliers, DVD/CD Covers and the Media kit to send to film festivals and for press conferences. We have dual processor graphic workstations to cater to all 2D and 3D graphic requirements. Compositing / Color Correction Looking for superior compositing and color correction solution in India? At Crucible we are adequately equipped with both hardware and a talented workforce to provide you with stunning visual effects and picture perfect colour correction.</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
-        <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
+        <p style="text-align:center"><a class="main-btn" href="<?php  echo get_home_url();?>/motion-graphic-vfx">read more</a></p>
       </div>
       <div class="grid_6 wow fadeInUp">
         <div class="services_icon"><i class="fa fa-bullhorn"></i></div>
@@ -79,7 +79,7 @@
         <p style="visibility:hidden">to make read more align with other read more</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
         <p style="visibility:hidden">to make read more align with other read more</p>
-        <p style="text-align:center"><a class="main-btn" href="#">read more</a></p>
+        <p style="text-align:center"><a class="main-btn" href="<?php  echo get_home_url();?>/profesional-audio-studio">read more</a></p>
       </div>     
     </div><!--row-->
   </div><!--services-->
