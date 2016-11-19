@@ -14,7 +14,7 @@ function clients_register() {
         'supports' => array('title','thumbnail')
     );
  
-    register_post_type( 'Client' , $args );
+    register_post_type( 'client' , $args );
 }
  add_action('save_post', 'save_client_info');
  
