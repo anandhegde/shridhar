@@ -19,7 +19,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <title><?php  global $title;
           $title = wp_title("",true);
-          $title = "anand";
+          $title = "Crucible Studio";
           echo $title;
         ?>
 </title>
@@ -54,7 +54,18 @@
                   <a id="about_href" href="<?php echo get_home_url();?>#about">About</a>
                 </li>
                 <li>
-                  <a id="portfolio_href" href="<?php echo get_home_url();?>#portfolio">portfolio
+                  <?php
+                    $active_class = "";
+                    if( is_page("adfilmsnpromos") || is_page("corporatefilms") || is_page("documentaryfilms") || is_page("telefilmsnseries"))
+                    {
+                      $active_class = "active";
+                    }
+                    if( is_page("camera-production") || is_page("motion-graphic-vfx") || is_page("post-production") || is_page("profesional-audio-studio"))
+                    {
+                      $active_class = "active";
+                    }
+                  ?>
+                  <a id="portfolio_href" class="<?php echo $active_class;?>" href="<?php echo get_home_url();?>#portfolio">portfolio
                   </a>
                   <!-- <ul>
                     <li><a href="#">Corporate Films & Presentations</a></li>
