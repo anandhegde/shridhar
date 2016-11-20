@@ -1,5 +1,4 @@
 <div id="portfolio" class="container">
-  <hr/>
   <div class="video-content folio-video-content">
   <h3>Our Works</h3>
     <div class="row">

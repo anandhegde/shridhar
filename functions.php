@@ -123,7 +123,7 @@ function crucible_scripts() {
 
 		wp_enqueue_style( 'crucible-jquery.fancybox-buttons', get_template_directory_uri() . '/css/jquery.fancybox-buttons.css' );
 
-		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161119', false );
+		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161120', false );
 
 		wp_enqueue_script( 'crucible-jquery', get_template_directory_uri() . '/js/jquery.js', array(), '20151115', true );
 
@@ -143,7 +143,7 @@ function crucible_scripts() {
 	{
 		wp_enqueue_style( 'crucible-grid', get_template_directory_uri() . '/css/grid.css' );
 
-		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161119', false );
+		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161120', false );
 
 		wp_enqueue_script( 'crucible-jquery', get_template_directory_uri() . '/js/jquery.js', array(), '20151115', true );
 
@@ -163,7 +163,7 @@ function crucible_scripts() {
 
 		wp_enqueue_style( 'crucible-jquery.fancybox', get_template_directory_uri() . '/css/jquery.fancybox.css' );
 
-		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161119', false );
+		wp_enqueue_style( 'crucible-style', get_template_directory_uri() . '/css/style.css', array(), '20161120', false );
 
 		wp_enqueue_script( 'crucible-jquery', get_template_directory_uri() . '/js/jquery.js', array(), '20151115', true );
 
