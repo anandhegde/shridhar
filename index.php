@@ -20,6 +20,7 @@ get_header(); ?>
 
   <section id="content" class="content">
     <?php get_template_part( 'template-parts/index/home', 'none' ); ?>
+    <?php get_template_part( 'template-parts/index/new_about', 'none' ); ?>
     <?php get_template_part( 'template-parts/index/about', 'none' ); ?>
     <?php get_template_part( 'template-parts/index/portfolio', 'none' ); ?>
     <?php get_template_part( 'template-parts/index/clients', 'none' ); ?>

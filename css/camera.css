@@ -4,7 +4,7 @@
 .camera_block {
   display: block;
   position: relative;
-  border-top: 92px solid transparent;
+  /*border-top: 92px solid transparent;*/
   padding-bottom: 37.74358974358974%;
 }
 .camera_wrap {

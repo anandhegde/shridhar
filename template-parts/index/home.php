@@ -16,11 +16,6 @@
           //the_post_thumbnail();
           $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID()), 'single-post-thumbnail' ); 
           echo '<div data-src="'.$image[0].'">';
-            echo '<div class="camera_caption fadeIn">';
-              echo '<div class="camera_caption_title">';
-               echo '<h2>'. get_post_custom_values( 'homePageImage_caption', get_the_ID())[0] .'</h2>';
-              echo '</div>';
-            echo '</div>';
           echo '</div><!--camera-item-->';
         }
       ?>
